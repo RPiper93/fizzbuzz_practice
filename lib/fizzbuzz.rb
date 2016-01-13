@@ -1,6 +1,10 @@
-def fizzbuzz(number)
-  return 'fizzbuzz' if (number % 15) == 0
-  return 'buzz' if (number % 5) == 0
-  return 'fizz' if (number % 3) == 0
-  number
+class Fixnum
+
+  def fizzbuzz
+    return 'fizzbuzz' if (self % 15) == 0
+    return 'buzz' if (self % 5) == 0
+    return 'fizz' if (self % 3) == 0
+    self
+  end
+
 end
