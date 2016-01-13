@@ -16,4 +16,12 @@ describe 'fizzbuzz' do
     end
   end
 
+  (1..50).each do |y|
+    it 'returns "buzz" when number is divisible by 5 and not by 3' do
+      if y % 5 == 0 && y % 3 != 0
+        expect(fizzbuzz(y)).to eq 'buzz'
+      end
+    end
+  end
+
 end
