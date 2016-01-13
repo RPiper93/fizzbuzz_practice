@@ -24,4 +24,12 @@ describe 'fizzbuzz' do
     end
   end
 
+  (1..100).each do |z|
+    it 'returns itself when number is neither divisible by 3 and/or 5' do
+      if z % 3 != 0 && z % 5 != 0
+        expect(fizzbuzz(z)).to eq z
+      end
+    end
+  end
+
 end
