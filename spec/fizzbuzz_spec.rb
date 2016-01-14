@@ -10,11 +10,9 @@ describe 'fizzbuzz' do
     expect(1.fizzbuzz).to eq 1
   end
 
-  (1..100).each do |x|
+  [15, 60, 75, 105, 150].each do |x|
     it 'returns "fizzbuzz" when number is a product of 3 and 5' do
-      if x % 15 == 0
-        expect(x.fizzbuzz).to eq 'fizzbuzz'
-      end
+      expect(x.fizzbuzz).to eq 'fizzbuzz'
     end
   end
 
