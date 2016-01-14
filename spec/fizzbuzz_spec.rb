@@ -16,11 +16,9 @@ describe 'fizzbuzz' do
     end
   end
 
-  (1..100).each do |y|
+  [5, 10, 20, 25, 35, 80, 85, 95, 155].each do |y|
     it 'returns "buzz" when number is divisible by 5 and not by 3' do
-      if y % 5 == 0 && y % 3 != 0
-        expect(y.fizzbuzz).to eq 'buzz'
-      end
+      expect(y.fizzbuzz).to eq 'buzz'
     end
   end
 
